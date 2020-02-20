@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Laboratorio_01.Models.mJugador>
+
+@{
+    ViewBag.Title = "InicioNet";
+}
+
+<h2>InicioNet</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div>
+    @using(Html.BeginForm("Busqueda","ListNetJug"))
+    {
+       <label>Nombre</label>
+       <input type="text" name="Texto"/>
+       <button type="submit">Buscar</button>
+    }
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Posicion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Club)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Posicion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Club)
+        </td>
+        <td>
+     
+            @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })|*@
+            @Html.ActionLink("Delete", "Delete", new { id=item.Llave })
+        </td>
+    </tr>
+}
+
+
+
+</table>
+
+<div>
+    @using (Html.BeginForm("CargaArch", "ListNetJug"))
+    {<label>Carga de archivo</label>
+        <input type="file" value="Hola" accept=".csv"  name="Archivo" />
+        <button type="submit">Subir</button>
+        }
+    </div>

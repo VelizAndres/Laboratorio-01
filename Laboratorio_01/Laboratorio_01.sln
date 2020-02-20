@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio_01", "Laboratorio_01.csproj", "{A777938B-BE18-4273-A46E-AF2C04D5AAD9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2} = {2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryArtesana", "..\LibraryArtesana\LibraryArtesana.csproj", "{2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A777938B-BE18-4273-A46E-AF2C04D5AAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A777938B-BE18-4273-A46E-AF2C04D5AAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A777938B-BE18-4273-A46E-AF2C04D5AAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A777938B-BE18-4273-A46E-AF2C04D5AAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6E8EF5-F368-4A03-86E7-6E5D7F47E3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B248A12-3F51-4AA3-85CA-82BD3270D736}
+	EndGlobalSection
+EndGlobal
